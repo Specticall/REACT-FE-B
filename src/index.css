@@ -1,0 +1,139 @@
+:root {
+  --clr-accent: #d87d4a;
+  --clr-bg: #f1f1f1;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--clr-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.checkout-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.checkout-list {
+  background-color: white;
+  width: 30rem;
+
+  padding: 1.25rem 1.5rem;
+
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.checkout-item__img {
+  width: 3.5rem;
+  border-radius: 0.25rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: antiquewhite;
+}
+
+.checkout-item__name {
+  font-weight: 600;
+}
+
+.checkout-item__price {
+  color: gray;
+}
+
+.checkout-item__count {
+  margin-left: auto;
+  color: gray;
+  font-weight: 500;
+}
+
+.checkout__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.checkout-details {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.checkout-details__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-details__desc {
+  color: gray;
+}
+
+.checkout-details__accent {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.checkout-details-total {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-details-total .checkout-details__accent {
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+
+.btn-primary {
+  background-color: var(--clr-accent);
+  color: white;
+  padding-block: 0.875rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.btn-primary:hover {
+  opacity: 0.75;
+}
+
+.counter {
+  display: flex;
+  margin-left: auto;
+  background-color: rgb(226, 226, 226);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.counter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  height: 2.5rem;
+  aspect-ratio: 1;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.counter-btn:hover {
+  opacity: 0.5;
+}
