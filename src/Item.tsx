@@ -1,11 +1,14 @@
+import Counter from "./Counter";
+import { useState } from "react";
+
 type Props = {
   title: string;
-  count: number;
   price: number;
   isDiscount?: boolean;
 };
 // number, string, boolean
-export default function Item({ title, count, price, isDiscount }: Props) {
+export default function Item({ title, price, isDiscount }: Props) {
+  const [count, setCount] = useState(0);
   const discountedPrice = price * 0.5;
   return (
     <div className="checkout-item">
@@ -20,15 +23,10 @@ export default function Item({ title, count, price, isDiscount }: Props) {
         </p>
         <p className="checkout-item__price">
           {isDiscount ? discountedPrice : price} x {count} = ${" "}
-          {(isDiscount ? discountedPrice : price) * count * 0.5}
+          {(isDiscount ? discountedPrice : price) * count}
         </p>
       </div>
-      {/* <p className="checkout-item__count">{count}x</p> */}
-      <div className="counter">
-        <button className="counter-btn">+</button>
-        <p className="counter-content">0</p>
-        <button className="counter-btn">-</button>
-      </div>
+      <Counter count={count} setCount={setCount} />
     </div>
   );
 }
