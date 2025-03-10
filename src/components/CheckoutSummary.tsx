@@ -21,7 +21,11 @@ const itemList = [
   },
 ];
 
-export default function Checkout() {
+type Props = {
+  onSubmit: () => void;
+};
+
+export default function CheckoutSummary({ onSubmit }: Props) {
   return (
     <div className="checkout">
       <div className="checkout-list">
@@ -52,7 +56,9 @@ export default function Checkout() {
             <p className="checkout-details__desc">GRAND TOTAL</p>
             <p className="checkout-details__accent">$2031.70</p>
           </div>
-          <button className="btn btn-primary">CONTINUE & PAY</button>
+          <button className="btn btn-primary" onClick={onSubmit}>
+            CONTINUE & PAY
+          </button>
         </div>
       </div>
     </div>

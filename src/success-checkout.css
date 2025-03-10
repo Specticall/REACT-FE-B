@@ -1,0 +1,19 @@
+.success-checkout__home {
+  width: 100%;
+}
+
+.success-checkout__desc {
+  color: gray;
+  margin-bottom: 1.5rem;
+}
+
+.success-checkout {
+  text-align: center;
+}
+
+.success-checkout__title {
+  margin-top: 1rem;
+  max-width: 20rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}

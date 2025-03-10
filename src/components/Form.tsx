@@ -1,4 +1,3 @@
-import "./Form.css";
 import PaymentDetails from "./PaymentDetails";
 import BillingDetails from "./BillingDetails";
 
