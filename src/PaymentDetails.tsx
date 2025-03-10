@@ -5,10 +5,8 @@ type Props = {
   method: string;
 };
 export default function PaymentDetails({ method, setMethod }: Props) {
-  console.log(method);
-
   return (
-    <div className="margin-top-12 grid-layout grid-cols-2 gap-y-6 gap-4">
+    <div className="payment-details margin-top-12 grid-layout grid-cols-2 gap-y-6 gap-4">
       <p className="text-accent col-span-2">PAYMENT DETAILS</p>
       <p className="row-span-2">Payment Method</p>
       <div
