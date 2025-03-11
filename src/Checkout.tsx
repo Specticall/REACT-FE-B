@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Checkout from "./Checkout";
 import Form from "./Form";
+import CheckoutSummary from "./CheckoutSummary";
 
 export default function Checkout() {
   const [name, setName] = useState("");
@@ -22,7 +22,7 @@ export default function Checkout() {
         setEmail={setEmail}
         setMethod={setMethod}
       />
-      <Checkout />
+      <CheckoutSummary />
     </div>
   );
 }

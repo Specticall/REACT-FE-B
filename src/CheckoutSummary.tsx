@@ -21,7 +21,7 @@ const itemList = [
   },
 ];
 
-export default function Checkout() {
+export default function CheckoutSummary() {
   return (
     <div className="checkout">
       <div className="checkout-list">

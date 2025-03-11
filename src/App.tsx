@@ -1,5 +1,5 @@
-import SuccessCheckout from "./SuccessPayment";
+import Checkout from "./Checkout";
 
 export default function App() {
-  return <SuccessCheckout />;
+  return <Checkout />;
 }

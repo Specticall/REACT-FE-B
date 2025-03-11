@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type Props = {
   count: number;
   setCount: React.Dispatch<React.SetStateAction<number>>;

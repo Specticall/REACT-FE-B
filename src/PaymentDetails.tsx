@@ -1,4 +1,3 @@
-import { useState } from "react";
 import codImage from "/cod.png";
 type Props = {
   setMethod: React.Dispatch<React.SetStateAction<string>>;
